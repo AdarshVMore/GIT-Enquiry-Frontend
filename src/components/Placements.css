@@ -1,0 +1,58 @@
+.partnerships {
+  text-align: center;
+  padding: 50px 100px;
+  background-color: #ffffff;
+}
+
+.partnerships h2 {
+  font-size: 2em;
+  color: #0c1e36;
+  margin-bottom: 10px;
+}
+
+.slick-arrow {
+  display: hidden;
+}
+
+.partnerships p {
+  font-size: 1em;
+  color: #5a5a5a;
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.partner-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slick Carousel Customization */
+.slick-dots li button:before {
+  color: #0c1e36;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #0c1e36;
+}
