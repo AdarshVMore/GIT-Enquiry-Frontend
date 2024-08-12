@@ -1,11 +1,11 @@
 import React from "react";
 import "./Gallery.css";
-import football from "../assets/gallery1.jpg";
-import IV from "../assets/gallery2.jpg";
-import College from "../assets/gallery3.jpg";
-import Codebits from "../assets/gallery4.JPG";
-import Gallery5 from "../assets/gallery5.jpg";
-import Gallery6 from "../assets/gallery6.jpg";
+import football from "../assets/gallery1.webp";
+import IV from "../assets/gallery2.webp";
+import College from "../assets/gallery3.webp";
+import Codebits from "../assets/gallery4.webp";
+import Gallery5 from "../assets/gallery5.webp";
+import Gallery6 from "../assets/gallery6.webp";
 
 const Gallery = () => {
   return (

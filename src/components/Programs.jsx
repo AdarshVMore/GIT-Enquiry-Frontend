@@ -6,12 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Importing images
-import programImage1 from "../assets/program1.png.jpg";
-import programImage2 from "../assets/program2.jpg";
-import programImage3 from "../assets/program3.jpg";
-import programImage4 from "../assets/program4.jpg";
-import programImage5 from "../assets/program6.jpg";
-import programImage6 from "../assets/program5.jpg";
+import programImage1 from "../assets/program1.png.webp";
+import programImage2 from "../assets/program2.webp";
+import programImage3 from "../assets/program3.webp";
+import programImage4 from "../assets/program4.webp";
+import programImage5 from "../assets/program6.webp";
+import programImage6 from "../assets/program5.webp";
 
 const programs = [
   {

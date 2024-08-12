@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Placements.css";
-import capgemine from "../assets/c-capgemine.png";
-import olon from "../assets/c-olon.png";
-import infosys from "../assets/c-infosys.png";
-import wipro from "../assets/c-wipro.png";
-import accenture from "../assets/c-accenture.png";
+import capgemine from "../assets/c-capgemine.webp";
+import olon from "../assets/c-olon.webp";
+import infosys from "../assets/c-infosys.webp";
+import wipro from "../assets/c-wipro.webp";
+import accenture from "../assets/c-accenture.webp";
 
 const Placements = () => {
   const settings = {

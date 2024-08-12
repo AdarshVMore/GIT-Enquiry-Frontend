@@ -1,8 +1,9 @@
 import "./EnquiryFOrm.css";
-import logo from "../assets/logo.png";
-import whatsappLogo from "../assets/whatsapp-logo.png";
+import logo from "../assets/logo.webp";
+import whatsappLogo from "../assets/whatsapp-logo.webp";
 import React, { useState } from "react";
 import axios from "axios";
+import Loader from "react-js-loader";
 
 function EnquiryFOrm() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ function EnquiryFOrm() {
     email: "",
     terms: false,
   });
+
+  const [isLoading, setIsLoading] = useState(false); // New state for loader
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -22,13 +25,15 @@ function EnquiryFOrm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true); // Show loader
     try {
       await axios.post("https://git-backend.onrender.com/enquiry", formData);
       alert("Form submitted successfully");
-      console.loog("done");
     } catch (error) {
       console.log(error);
       alert("Error submitting form");
+    } finally {
+      setIsLoading(false); // Hide loader after submission
     }
   };
 
@@ -38,13 +43,13 @@ function EnquiryFOrm() {
         <img src={logo} alt="Gharda Institute Logo" className="logo" />
         <div className="right">
           <p>Call</p>
-          <a href="tel:+91 9405595075" className="contact-btn">
-            +91 9405595075
+          <a href="tel:+919923265075" className="contact-btn">
+            +91 9923265075
           </a>
           <a
             href="https://www.git-india.edu.in/git/index.html"
             target="_blank"
-            className="contact-btn"
+            className="main-web-btn"
           >
             Main website
           </a>
@@ -57,7 +62,7 @@ function EnquiryFOrm() {
           <p className="blue">BE Programs 2024</p>
           <p>NOW OPEN</p>
           <button className="apply-btn">APPLY NOW</button>
-          <span>Apply on the basis of 10+2 / JEE Main-2024 Scores</span>
+          <span>Apply on the basis of 10+2 / JEE Main-2024 Score</span>
           <div className="bottom">
             <p>Discover</p>
             <span>Countless</span>
@@ -76,15 +81,17 @@ function EnquiryFOrm() {
                   name="fullname"
                   value={formData.fullname}
                   onChange={handleChange}
+                  required="true"
                 />
               </label>
               <label>
                 Phone No.
                 <input
-                  type="text"
+                  type="number"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  required="true"
                 />
               </label>
               <label>
@@ -94,6 +101,7 @@ function EnquiryFOrm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  required="true"
                 />
               </label>
 
@@ -103,10 +111,17 @@ function EnquiryFOrm() {
                   name="terms"
                   checked={formData.terms}
                   onChange={handleChange}
+                  required="true"
                 />
                 I agree with the website's <a href="#">terms and conditions</a>
               </label>
-              <button type="submit">Send</button>
+              <button type="submit" disabled={isLoading}>
+                {isLoading ? (
+                  <Loader type="ping-cube" bgColor={"blue"} size={40} />
+                ) : (
+                  "Send"
+                )}
+              </button>
             </form>
           </div>
         </div>
@@ -123,7 +138,7 @@ function EnquiryFOrm() {
       </button>
 
       <a
-        href="https://wa.me/+91 9405595075"
+        href="https://wa.me/919405732206"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"

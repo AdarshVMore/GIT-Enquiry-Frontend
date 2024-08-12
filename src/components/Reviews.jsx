@@ -1,6 +1,6 @@
 import React from "react";
 import "./Reviews.css";
-import reviewImage from "../assets/alumni.png"; // Update the path accordingly
+import reviewImage from "../assets/alumni.webp"; // Update the path accordingly
 
 const Reviews = () => {
   return (

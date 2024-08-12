@@ -106,3 +106,56 @@
     width: 300px; /* Larger logo for larger screens */
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-column h4 {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}

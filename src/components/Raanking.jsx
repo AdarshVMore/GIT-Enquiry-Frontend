@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Ranking.css";
-import logo1 from "../assets/AICTE.png";
-import logo2 from "../assets/NACC.png";
+import logo1 from "../assets/AICTE.webp";
+import logo2 from "../assets/NACC.webp";
 
 const Ranking = () => {
   const settings = {
