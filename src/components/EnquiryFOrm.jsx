@@ -43,8 +43,8 @@ function EnquiryFOrm() {
         <img src={logo} alt="Gharda Institute Logo" className="logo" />
         <div className="right">
           <p>Call</p>
-          <a href="tel:+919923265075" className="contact-btn">
-            +91 9923265075
+          <a href="tel:+919561931427" className="contact-btn">
+            +91 95619 31427
           </a>
           <a
             href="https://www.git-india.edu.in/git/index.html"

@@ -133,7 +133,7 @@ const Footer = () => {
           <ul>
             <li>Gharda Institute Of Technology</li>
             <li>
-              <a href="tel:+919422631677">📞 9422631677 Registrar</a>
+              <a href="tel:+919422152788">📞 9422152788 Registrar</a>
             </li>
             <li>
               <a href="tel:+919822765402">📞 9822765402 Academics</a>
